@@ -1,0 +1,19 @@
+{% extends "master.html"%}
+
+{%block title%}
+ግዕዝ ሃብ 
+{%endblock%}
+
+{% block content %}
+<h4><a href="/">home</a></h4>
+<h1>Members</h1>
+
+    <ul>
+    {%for mem in memlist%}
+        <li><a href="details/{{mem.id}}">{{mem.firstname}} {{mem.lastname}}</a></li>
+    {%endfor%}
+    </ul>
+
+{% endblock %}
+
+
