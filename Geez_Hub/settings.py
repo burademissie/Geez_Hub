@@ -58,7 +58,7 @@ ROOT_URLCONF = 'Geez_Hub.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'Templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'members/Templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
